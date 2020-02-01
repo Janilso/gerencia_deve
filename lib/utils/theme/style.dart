@@ -128,7 +128,7 @@ const Color secondary = const Color(0xFF1A1C35);
 const Color facebook = const Color(0xFF4267b2);
 const Color googlePlus = const Color(0xFFdb4437);
 const Color yellow = Colors.pinkAccent;
-const Color green1 = Colors.lightGreen;
+const Color green1 = Color(0xFF44D83A);
 const Color green2 = Colors.green;
 const Color blue1 = Colors.lightBlue;
 const Color blue2 = Colors.blue;
@@ -148,16 +148,33 @@ TextStyle textStyleSmall = const TextStyle(
 
 TextStyle heading18White600 =
     TextStyle(color: whiteColor, fontSize: 18.0, fontWeight: FontWeight.w600);
+
 TextStyle heading20Secundary800 =
     TextStyle(color: secondary, fontSize: 20.0, fontWeight: FontWeight.w800);
+
 TextStyle heading14Bold = TextStyle(
     color: colorBlueWhite, fontSize: 14.0, fontWeight: FontWeight.w700);
+
 TextStyle heading18MediumPrimary =
     TextStyle(color: primaryColor, fontSize: 18.0, fontWeight: FontWeight.w500);
+
 TextStyle heading18BoldPrimary =
     TextStyle(color: primaryColor, fontSize: 18.0, fontWeight: FontWeight.w700);
 
-const Color transparentColor = const Color.fromRGBO(0, 0, 0, 0.2);
+TextStyle styleAppBar =
+    TextStyle(color: whiteColor, fontSize: 18.0, fontWeight: FontWeight.w600);
+
+TextStyle heading20BoldWhite =
+    TextStyle(color: whiteColor, fontSize: 20.0, fontWeight: FontWeight.w700);
+
+TextStyle heading16SemiBoldWhite =
+    TextStyle(color: whiteColor, fontSize: 16.0, fontWeight: FontWeight.w600);
+
+TextStyle heading14RegularWhite =
+    TextStyle(color: whiteColor, fontSize: 14.0, fontWeight: FontWeight.w400);
+
+
+const Color transparentColor = const Color.fromRGBO(0, 0, 0, 0);
 const Color activeButtonColor = const Color.fromRGBO(43, 194, 137, 50.0);
 const Color dangerButtonColor = const Color(0XFFf53a4d);
 

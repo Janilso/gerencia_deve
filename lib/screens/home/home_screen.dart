@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gerencia_deve/screens/divida/divida_screen.dart';
 import 'package:gerencia_deve/utils/components/custom_app_bar.dart';
 import 'package:gerencia_deve/utils/components/custom_card.dart';
 import 'package:gerencia_deve/utils/components/custom_floating_acrion_button.dart';
@@ -16,9 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     screenSize = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: CustomAppBar(
-        texto: "LOGO",
-      ),
+      appBar: CustomAppBar(texto: "LOGO"),
       backgroundColor: secondary,
       bottomNavigationBar: Container(
         color: colorBlueWhite,
@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Total: ", style: heading18MediumPrimary),
+            Text("Total geral a receber: ", style: heading18MediumPrimary),
             Text("R\$ 10,00", style: heading18BoldPrimary),
           ],
         ),
@@ -46,10 +46,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   shrinkWrap: true,
                   itemCount: 1,
                   itemBuilder: (BuildContext context, index) {
-                    return Container(
-                      margin: EdgeInsets.symmetric(horizontal: 25),
-                      child: CustomCard(
-                          title: 'Nome Client', subTitle: 'R\$ 70,00'),
+                    return CustomCard(
+                      onTap: () => Navigator.push(context,
+                          CupertinoPageRoute(builder: (_) => DividaScreen())),
+                      title: 'Nome Client',
+                      subTitle: 'R\$ 70,00',
                     );
                   }),
             ),
