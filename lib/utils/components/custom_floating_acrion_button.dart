@@ -20,10 +20,7 @@ class CustonFloatingActionButton extends StatelessWidget {
             colors: [primaryColor, orange],
           ),
           shape: BoxShape.circle),
-      child: Icon(
-        icon,
-        color: whiteColor,
-      ),
+      child: Icon(icon, color: whiteColor),
     );
   }
 }

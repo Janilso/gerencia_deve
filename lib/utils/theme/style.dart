@@ -93,7 +93,7 @@ TextStyle textPrimary = const TextStyle(
 
 final ThemeData base = ThemeData.light();
 
-ThemeData appTheme = new ThemeData(
+ThemeData appTheme = ThemeData(
   fontFamily: "Raleway",
   primaryColor: primaryColor,
   buttonColor: primaryColor,
@@ -106,7 +106,7 @@ ThemeData appTheme = new ThemeData(
   backgroundColor: Colors.white,
   errorColor: const Color(0xFFB00020),
   highlightColor: primaryColor,
-  iconTheme: new IconThemeData(color: primaryColor),
+  iconTheme: IconThemeData(color: primaryColor),
   buttonTheme: const ButtonThemeData(textTheme: ButtonTextTheme.primary),
   textTheme: _buildTextTheme(base.textTheme),
   primaryTextTheme: _buildTextTheme(base.primaryTextTheme),
@@ -139,11 +139,23 @@ const Color orange = Color(0xFFD24A0B);
 const Color greenColor = const Color(0xFF00c497);
 const Color colorOnline = const Color(0XFF009b00);
 const Color colorOffline = const Color(0XFFe30303);
+const Color colorBlueWhite = const Color(0xFF333657);
 
 TextStyle textStyleSmall = const TextStyle(
     color: const Color.fromRGBO(255, 255, 255, 0.8),
     fontSize: 12.0,
     fontWeight: FontWeight.bold);
+
+TextStyle heading18White600 =
+    TextStyle(color: whiteColor, fontSize: 18.0, fontWeight: FontWeight.w600);
+TextStyle heading20Secundary800 =
+    TextStyle(color: secondary, fontSize: 20.0, fontWeight: FontWeight.w800);
+TextStyle heading14Bold = TextStyle(
+    color: colorBlueWhite, fontSize: 14.0, fontWeight: FontWeight.w700);
+TextStyle heading18MediumPrimary =
+    TextStyle(color: primaryColor, fontSize: 18.0, fontWeight: FontWeight.w500);
+TextStyle heading18BoldPrimary =
+    TextStyle(color: primaryColor, fontSize: 18.0, fontWeight: FontWeight.w700);
 
 const Color transparentColor = const Color.fromRGBO(0, 0, 0, 0.2);
 const Color activeButtonColor = const Color.fromRGBO(43, 194, 137, 50.0);
